@@ -30,6 +30,7 @@ function setupModal(btn, modal, span, video) {
   let bbvid = document.getElementById("BBVideo");
   let ppdvid = document.getElementById("PPDVideo");
   let icvid = document.getElementById("ICVideo");
+  let fdfvid = document.getElementById("FDFVideo");
   let hitVideo = document.getElementById("HitEmVideo");
   
   var modal = document.getElementById("myModal");
@@ -65,6 +66,6 @@ function setupModal(btn, modal, span, video) {
   setupModal(btnFour, birdBrainModal, span3, bbvid);
   setupModal(btnFive, idleCowModal, span4, ICVideo);
   setupModal(btnSix, princessModal, span5, ppdvid);
-  setupModal(btnSeven, receptionModal, span6, null);
+  setupModal(btnSeven, receptionModal, span6, fdfvid);
   setupModal(btnEight, hitModal, span7, hitVideo);
   
