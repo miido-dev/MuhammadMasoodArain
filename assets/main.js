@@ -1,47 +1,65 @@
+function setupModal(btn, modal, span, video) {
+    btn.onclick = function() {
+      modal.style.display = "block";
+    };
+  
+    span.onclick = function() {
+      modal.style.display = "none";
+      pauseVideo(video);
+    };
+  
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+            pauseVideo(video);
+      }
+    };
 
-let vid = document.getElementById("myVideo"); 
-// Get the modal
-var modal = document.getElementById("myModal");
-var mergeModal = document.getElementById("MergeChefModal");
-
-// Get the button that opens the modal
-var btn = document.getElementById("myBtn");
-var btnTwo = document.getElementById("BtnTwo");
-
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
-var span1 = document.getElementById("MergeChefModal").getElementsByClassName("close")[0];
-
-// When the user clicks the button, open the modal 
-btn.onclick = function() {
-modal.style.display = "block";
-}
-btnTwo.onclick = function() {
-    mergeModal.style.display = "block";
-}
-
-// When the user clicks on <span> (x), close the modal
-span.onclick = function() {
-modal.style.display = "none";
-pauseVid();
-}
-span1.onclick = function() {
-    mergeModal.style.display = "none";
-pauseVid();
-}
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-if (event.target == modal) {
-    modal.style.display = "none";
-    pauseVid();
-}
-else if (event.target == mergeModal) {
-    mergeModal.style.display = "none";
-    // pauseVid();
-}
-}
-
-function pauseVid() { 
-vid.pause(); 
-vid.currentTime = 0;
-}
+  }
+  
+  function pauseVideo(video) {
+    if (video) {
+      video.pause();
+      video.currentTime = 0;
+    }
+  }
+  
+  let vid = document.getElementById("myVideo");
+  let mergeChefvid = document.getElementById("MergeChefVideo");
+  let dateUpvid = document.getElementById("DateUpVideo");
+  let bbvid = document.getElementById("BBVideo");
+  let ppdvid = document.getElementById("PPDVideo");
+  let icvid = document.getElementById("ICVideo");
+  
+  var modal = document.getElementById("myModal");
+  var mergeModal = document.getElementById("MergeChefModal");
+  var dateModal = document.getElementById("DateUpRunnerModal");
+  var birdBrainModal = document.getElementById("BridBrainModal");
+  var idleCowModal = document.getElementById("IdleCowModal");
+  var princessModal = document.getElementById("PrincessPartyDozerModal");
+  var receptionModal = document.getElementById("ReceptionGameModal");
+  
+  var btn = document.getElementById("myBtn");
+  var btnTwo = document.getElementById("BtnTwo");
+  var btnThree = document.getElementById("BtnThree");
+  var btnFour = document.getElementById("BtnFour");
+  var btnFive = document.getElementById("BtnFive");
+  var btnSix = document.getElementById("BtnSix");
+  var btnSeven = document.getElementById("BtnSeven");
+  
+  var span = document.getElementsByClassName("close")[0];
+  var span1 = mergeModal.getElementsByClassName("close")[0];
+  var span2 = dateModal.getElementsByClassName("close")[0];
+  var span3 = birdBrainModal.getElementsByClassName("close")[0];
+  var span4 = idleCowModal.getElementsByClassName("close")[0];
+  var span5 = princessModal.getElementsByClassName("close")[0];
+  var span6 = receptionModal.getElementsByClassName("close")[0];
+  
+  setupModal(btn, modal, span, vid);
+  setupModal(btnTwo, mergeModal, span1, mergeChefvid);
+  setupModal(btnThree, dateModal, span2, dateUpvid);
+  setupModal(btnFour, birdBrainModal, span3, bbvid);
+  setupModal(btnFive, idleCowModal, span4, ICVideo);
+  setupModal(btnSix, princessModal, span5, ppdvid);
+  setupModal(btnSeven, receptionModal, span6, null);
+  
