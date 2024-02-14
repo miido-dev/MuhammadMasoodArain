@@ -30,6 +30,7 @@ function setupModal(btn, modal, span, video) {
   let bbvid = document.getElementById("BBVideo");
   let ppdvid = document.getElementById("PPDVideo");
   let icvid = document.getElementById("ICVideo");
+  let hitVideo = document.getElementById("HitEmVideo");
   
   var modal = document.getElementById("myModal");
   var mergeModal = document.getElementById("MergeChefModal");
@@ -38,6 +39,7 @@ function setupModal(btn, modal, span, video) {
   var idleCowModal = document.getElementById("IdleCowModal");
   var princessModal = document.getElementById("PrincessPartyDozerModal");
   var receptionModal = document.getElementById("ReceptionGameModal");
+  var hitModal = document.getElementById("HitEmModal");
   
   var btn = document.getElementById("myBtn");
   var btnTwo = document.getElementById("BtnTwo");
@@ -46,6 +48,7 @@ function setupModal(btn, modal, span, video) {
   var btnFive = document.getElementById("BtnFive");
   var btnSix = document.getElementById("BtnSix");
   var btnSeven = document.getElementById("BtnSeven");
+  var btnEight = document.getElementById("BtnEight");
   
   var span = document.getElementsByClassName("close")[0];
   var span1 = mergeModal.getElementsByClassName("close")[0];
@@ -54,6 +57,7 @@ function setupModal(btn, modal, span, video) {
   var span4 = idleCowModal.getElementsByClassName("close")[0];
   var span5 = princessModal.getElementsByClassName("close")[0];
   var span6 = receptionModal.getElementsByClassName("close")[0];
+  var span7 = hitModal.getElementsByClassName("close")[0];
   
   setupModal(btn, modal, span, vid);
   setupModal(btnTwo, mergeModal, span1, mergeChefvid);
@@ -62,4 +66,5 @@ function setupModal(btn, modal, span, video) {
   setupModal(btnFive, idleCowModal, span4, ICVideo);
   setupModal(btnSix, princessModal, span5, ppdvid);
   setupModal(btnSeven, receptionModal, span6, null);
+  setupModal(btnEight, hitModal, span7, hitVideo);
   
