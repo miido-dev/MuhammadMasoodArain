@@ -47,7 +47,7 @@ const modalData = [
   { btnId: "BtnSix", modalId: "PrincessPartyDozerModal", videoId: "PPDVideo" },
   { btnId: "BtnSeven", modalId: "ReceptionGameModal", videoId: "FDFVideo" },
   { btnId: "BtnEight", modalId: "HitEmModal", videoId: "HitEmVideo" },
-  { btnId: "BtnNine", modalId: "TheTrialsModal", videoId: "TheTrialsVideo" },
+  { btnId: "BtnNine", modalId: "TheTrialsModal", videoId: "TheTrialVideo" },
   { btnId: "BtnTen", modalId: "VRSpacecraftModal", videoId: "VRSpacecraftModalVideo" },
 ];
 
