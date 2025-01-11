@@ -4,22 +4,22 @@
 
 
 body {
-	background-image: url("images/Background.jpg");
-	background-attachment: fixed;
-	background-position:center;
-	background-repeat: no-repeat;
-	background-size: cover; }
+background-image: url("images/Background.jpg");
+background-attachment: fixed;
+background-position:center;
+background-repeat: no-repeat;
+background-size: cover; 
+}
 
 .parallax {
 min-height: 500px;  }
 
 .right {
-margin-left: auto;
-margin-right: auto;
+position: relative;
+top: 50px;
 width: fit-content;
-/* width: 600px; */
 border: 3px solid #ffffff;
-padding: 50px;
+padding: 4.5%;
 backdrop-filter: blur(10px);
 }
 
@@ -37,26 +37,215 @@ margin-left: auto;
 margin-right: auto;}
 
 #shell {
-border-radius: 10px;}
+border-radius: 10px;
+}
 
 .body-div {
+position: relative;
+top: 50px;
 margin: auto;
 width: 80%; 
 height:max-content;
 padding-bottom: 10px;
-background-color:rgb(202, 8, 66);
-font-size:26px}
+background-color:rgb(8 165 202);
+font-size:26px
+}
 
 .body-title {
 text-align: center;
-color: rgb(0, 0, 0);}
+}
+
+
+/* Navigation Bar */
+.navbar {
+position: fixed;
+top: 0;
+width: 100%;
+background-color: rgba(0, 0, 0, 0.8);
+padding: 0.6rem;
+text-align: center;
+z-index: 10;
+}
+
+.navbar button {
+background: none;
+color: white;
+border: 1px solid white;
+padding: 0.5rem 1rem;
+cursor: pointer;
+margin: 0 0.5rem;
+}
+
+.navbar button:hover {
+background-color: white;
+color: black;
+}
+
+/* General Art Grid Styling */
+
+.hidden {
+	display: none !important;
+  }
+
+.art-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+	gap: 15px;
+	padding: 20px;
+	justify-items: center;
+  }
+  
+  .art-grid img {
+	width: 100%;
+	height: auto;
+	border-radius: 8px;
+	cursor: pointer;
+	transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .art-grid img:hover {
+	transform: scale(1.05);
+	box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Artwork Modal Styles */
+  .artwork-modal {
+	display: none; /* Hidden by default */
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.9);
+	z-index: 1000;
+	overflow-y: auto;
+  }
+  
+  .artwork-modal-content {
+	margin: 5% auto;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 15px;
+	justify-content: center;
+	max-width: 90%;
+  }
+  
+  .artwork-modal-content img {
+	width: 150px; /* Thumbnail size */
+	height: 150px; /* Keep a square aspect ratio */
+	object-fit: cover;
+	border-radius: 8px;
+	cursor: pointer;
+	transition: transform 0.2s;
+  }
+  
+  .artwork-modal-content img:hover {
+	transform: scale(1.1);
+  }
+  
+  /* Enlarged Image View */
+  .enlarged-image-container {
+	display: none; /* Hidden by default */
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.95);
+	z-index: 2000;
+	justify-content: center;
+	align-items: center;
+  }
+  
+  .enlarged-image-container img {
+	max-width: 90%;
+	max-height: 90%;
+	border-radius: 8px;
+  }
+  
+  .enlarged-image-container .close-enlarged {
+	position: absolute;
+	top: 20px;
+	right: 40px;
+	font-size: 40px;
+	color: white;
+	cursor: pointer;
+  }
+  
+  .enlarged-image-container .close-enlarged:hover {
+	color: #ccc;
+  }
+  
+  /* Close Button */
+  .artwork-modal .close-artwork-modal {
+	position: absolute;
+	top: 20px;
+	right: 40px;
+	font-size: 40px;
+	color: white;
+	cursor: pointer;
+  }
+  
+  .artwork-modal .close-artwork-modal:hover {
+	color: #ccc;
+  }
+  
+  /* "Show More" Button Styling */
+  .show-more-btn {
+	display: block;
+	margin: 20px auto;
+	padding: 10px 20px;
+	background-color: #4caf50;
+	color: white;
+	font-size: 16px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	transition: background-color 0.3s;
+  }
+  
+  .show-more-btn:hover {
+	background-color: #45a049;
+  }
+  
+  
+  
+/* Image Modal */
+.image-modal {
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background: rgba(0, 0, 0, 0.8);
+display: flex;
+justify-content: center;
+align-items: center;
+z-index: 20;
+}
+
+.image-modal img {
+max-width: 90%;
+max-height: 90%;
+border: 2px solid white;
+}
+
+.image-modal .close {
+position: absolute;
+top: 20px;
+right: 20px;
+font-size: 2rem;
+color: white;
+cursor: pointer;
+}
 
 
 .card{
 padding: 1rem;
-height:auto;
-background-color: antiquewhite;
-border-radius: 10px;
+height: 80%;
+width: 70%;
+background-color: rgba(250, 235, 215, 0);
+border-radius: 20px;
 cursor: pointer;
 position: relative;
 overflow: hidden;
@@ -68,13 +257,13 @@ vertical-align: bottom;
 }
 
 .cards {
-max-width: 1200px;
+max-width: 900px;
 margin: 0 auto;
 display: grid;
-gap: 1rem;}
+}
 
 .projectImages{
-border-radius: 10%;
+border-radius: 20%;
 display: block;
 margin-left: auto;
 margin-right: auto;
@@ -89,7 +278,7 @@ width:400px;}
 .cards { grid-template-columns: repeat(2, 1fr); }}
 
 @media (min-width: 900px) {
-.cards { grid-template-columns: repeat(3, 1fr); }}
+.cards { grid-template-columns: repeat(4, 1fr); }}
 
 
 a, a:link, a:visited {
@@ -99,7 +288,7 @@ text-decoration: none;
 
 
 a:hover {
-color: #732299;
+color: #719922;
 background-color: transparent;
 text-decoration: underline;
 }
@@ -134,73 +323,127 @@ width: 100%;
 backdrop-filter: blur(10px);
 }
 
+/* ------------------------------------------------------------------------------------------------------ */
+
 /* The Modal (background) */
 .modal {
-display: none; /* Hidden by default */
-position: fixed; /* Stay in place */
-z-index: 1; /* Sit on top */
-padding-top: 100px; /* Location of the box */
-left: 0;
-top: 0;
-width: 100%; /* Full width */
-height: 100%; /* Full height */
-overflow: auto; /* Enable scroll if needed */
-background-color: rgb(0,0,0); /* Fallback color */
-background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-}
-
-/* Modal Content */
-.modal-content {
-background-color:crimson;
-margin: auto;
-padding: 20px;
-border: 1px solid #888;
-width: 80%;
-height: 80%;
-border-radius: 25px;
-}
-
-
-
-/* The Close Button */
-.close {
-color: #aaaaaa;
-float: right;
-font-size: 28px;
-font-weight: bold;
-}
-
-.close:hover,
-.close:focus {
-color: #000;
-text-decoration: none;
-cursor: pointer;
-}
-
-.center {
-	display: block; 
-	margin-left: auto; 
-	margin-right: auto; 
-	margin-top: 5%;
-	background-color:black;
-	border-radius: 25px;  
+	display: none; /* Hidden by default */
+	position: fixed; /* Stay in place */
+	z-index: 1; /* Sit on top */
+	padding-top: 5%; /* Location of the box */
+	left: 0;
+	top: 0;
+	width: 100%; /* Full width */
+	height: 100%; /* Full height */
+	overflow: auto; /* Enable scroll if needed */
+	background-color: rgba(0, 0, 0, 0.8); /* Black with opacity */
+  }
+  
+  /* Modal Content */
+  .modal-content {
+	background-color: rgb(20, 93, 220);
+	margin: auto;
 	padding: 20px;
-}
-
-
-.download-address {
-	background-color: rgb(172, 41, 41);
-	padding-left: 50px;
-	padding: bottom 0.5em;
+	border: 1px solid #888;
+	width: 90%;
+	max-width: 800px; /* Limit max width */
 	border-radius: 25px;
-}
-
-.modal-description{
-	background-color:aliceblue; 
-	padding-left: 15px;
-	padding-right: 15px;
-	padding-bottom: 10px;
-	padding-top: 2px; 
+	box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+	display: flex;
+	flex-direction: column; /* Stack content vertically */
+	gap: 20px; /* Add space between items */
+	overflow:hidden; /* Prevent spilling out */
+  }
+  
+  /* Fullscreen Button Styling */
+  .center-fullscreen {
+	display: block;
+	text-align: center;
+	margin-top: 10px;
+	font-size: 16px;
+	color: white;
+	text-decoration: underline;
+	cursor: pointer;
+  }
+  
+  .center-fullscreen:hover {
+	color: #ddd;
+  }
+  
+  /* Download Button Styling */
+  .download-address {
+	background-color: rgb(172, 41, 41);
+	text-align: center;
+	border-radius: 25px;
+	padding: 10px;
+	font-size: 18px;
+  }
+  
+  .download-address a {
+	color: white;
+	text-decoration: none;
+  }
+  
+  .download-address a:hover {
+	text-decoration: underline;
+  }
+  
+  /* Modal Description Styling */
+  .modal-description {
+	background-color: aliceblue;
+	padding: 15px;
 	border-radius: 15px;
-}
+	overflow-y: auto; /* Enable scrolling for overflowing content */
+	max-height: 200px; /* Limit description height */
+	font-size: 16px;
+	line-height: 1.5;
+  }
+  
+  /* The Close Button */
+  .close {
+	color: white;
+	float: right;
+	font-size: 28px;
+	font-weight: bold;
+	cursor: pointer;
+  }
+  
+  .close:hover,
+  .close:focus {
+	color: #ccc;
+  }
+  
+  /* Responsive Styling */
+  @media (max-width: 2048px) {
+	.modal-content {
+	  width: 95%; /* Reduce modal width */
+	  height: auto; /* Let modal height adjust dynamically */
+	  padding: 10px;
+	}
+  
+	.center {
+	  max-height: 50vh; /* Further reduce video height on small screens */
+	}
+  
+	.modal-description {
+	  max-height: 150px; /* Reduce description height */
+	  font-size: 14px; /* Reduce text size */
+	}
+  
+	.download-address {
+	  font-size: 16px; /* Adjust button size */
+	}
+  }
+
+  /* Video Styling */
+.center {
+	display: block;
+	margin: auto;
+	width: 100%;
+	height: auto; /* Adjust height based on width */
+	max-height: 50vh; /* Limit video height to 60% of viewport height */
+	background-color: black;
+	border-radius: 15px;
+	object-fit: contain; /* Ensure the entire video fits within bounds */
+  }
 

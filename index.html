@@ -4,309 +4,403 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" type="text/css" rel="noopener" target="_blank" href="css/main.css">
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <button onclick="scrollToSection('introduction')">Introduction</button>
+    <button onclick="scrollToSection('games')">Games</button>
+    <button onclick="scrollToSection('artwork')">Artwork</button>
+    <button onclick="scrollToSection('contact')">Contact</button>
+  </nav>
 </head>
 
 <body link="white">
 
-  <!-- Top Image -->
-  <div class="parallax">  
-      <div class="right">
-          <img class="imgAvatar" src="images/Profile Image.jpg" alt="Avatar" style="width:200px"/>
-          <h1 style="text-align: center;color: aliceblue;">I am Muhammad Masood, </h1>
-          <h2 style="text-align: center;color: aliceblue;">
-          A Game Developer passionate about creating memorable experiences.
-      </h2></div>
-  </div>
-
-  <div id="shell" class="body-div">
-      
-    <!-- Introduction -->
-    <h2 class="body-title">Introduction</h2> 
-
-    <p class="emphasized">
-          As a passionate and hardworking Game Developer, my ambition is to create games that resonate globally, 
-          leaving a lasting impact on players. My main goal is to craft experiences that not only entertain but 
-          also rekindle the enthusiasm for gaming, providing enjoyment to a wide audience.
-          <hr>
-    </p>
-
-    <!-- Recent Work -->
-    <div style="font-size:26px">
-        <h2 style="text-align: left;color: rgb(0, 0, 0); padding-left: 5%;"> Recent Works</h2>
-    </div>
-
-    <div class="cards">
-      <div id="myBtn" class="card">
-        <img class="projectImages" src="images/Game Icons/Wordoodle.png" alt="Avatar"/>
-        <br>
-        <div style="text-align: center; font-weight:600;">WORDOODLE</div>
-        <div class="button-text">View</div>
-      </div>
-      <div id="BtnTwo" class="card">
-        <img class="projectImages" src="images/Game Icons/Merge Chef_2.jpg" alt="Avatar" />
-        <br>
-        <div style="text-align: center; font-weight:600;">MERGE CHEF</div>
-        <div class="button-text">View</div>
-      </div>
-      <div id="BtnThree" class="card">
-        <img class="projectImages" src="images/Game Icons/Date Up Runner_2.jpg" alt="Avatar" />
-        <br>
-        <div style="text-align: center; font-weight:600;">DATE UP RUNNER</div>
-        <div id="myBtn" class="button-text">View</div>
-      </div>
-      <div id="BtnFour" class="card">
-        <img class="projectImages" src="images/Game Icons/BridBrain.png" alt="Avatar" />
-        <br>
-        <div style="text-align: center; font-weight:600;">BIRD BRAIN</div>
-        <div id="myBtn" class="button-text">View</div>
-      </div>
-      <div id="BtnFive" class="card">
-        <img class="projectImages" src="images/Game Icons/Idle Cow.png" alt="Avatar" />
-        <br>
-        <div style="text-align: center; font-weight:600;">IDLE COW</div>
-        <div id="myBtn" class="button-text">View</div>
-      </div>
-      <div id="BtnSix" class="card">
-        <img class="projectImages" src="images/Game Icons/Princess Party Dozer.png" alt="Avatar" />
-        <br>
-        <div style="text-align: center; font-weight:600;">PRINCESS PARTY DOZER</div>
-        <div id="myBtn" class="button-text">View</div>
-      </div>
-      <div id="BtnSeven" class="card">
-        <img class="projectImages" src="images/Game Icons/Reception.png" alt="Avatar" />
-        <br>
-        <div style="text-align: center; font-weight:600;">Front Desk Fiasco</div>
-        <div id="myBtn" class="button-text">View</div>
-      </div>
-      <div id="BtnEight" class="card">
-        <img class="projectImages" src="images/Game Icons/Hit Em.png" alt="Avatar" />
-        <br>
-        <div style="text-align: center; font-weight:600;">Hit Em</div>
-        <div id="myBtn" class="button-text">View</div>
-      </div>
-    </div>
-    <hr>
+  <!-- ---------------------------------------------------Introduciton----------------------------------------- -->
 
 
-    <!-- The Modal -->
-  <div id="myModal" class="modal">
-
-    <!-- Modal content -->
-    <div class="modal-content">
-      <span class="close" data-dismiss="modal">&times;</span>
-      <video class="center" id="myVideo" width="560" height="240" controls>
-        <source src="videos\Wordoodle.mp4" type="video/mp4">
-      </video>
-      <div class="download-address"><a href="https://play.google.com/store/apps/details?id=com.word.riddle&hl=en&gl=US"><h3>Download</h3></a></div>
-      <div class="modal-description">
-        <p class="emphasized" style="color: black; font-size: 23px;">
-        <h2>Description:</h2>
-
-          A puzzle game where you test vocabulary by guessing the word using both the number of empty spaces and words provided.
-          The game is meant to be learning experience for people and to give a challenge to anyone who feels they have a good
-          vocabulary.
-          <br>
-          <br>
-        <b>Role:</b>
-        <br>
-
-          I was an associate developer who was responsible for the game. Making it functional while maintaining the flow
-          and implementing power ups and new functionality with proper game design. 
-        </p>
+  <div class="parallax" id="introduction">  
+      <div class="right" style="margin-top:10px; width: 70%; margin-left: 10%;">
+          <img class="imgAvatar" src="images/Profile Image New.jpg" alt="Avatar" style="width:200px; margin-left: 0%;"/>
+          <h1 style="text-align: left;color: aliceblue;">I am Muhammad Masood, </h1>
+          <h2 style="text-align: left;color: aliceblue;">The Game Developer and designer with the passion of making incredibly awesome games.</h2>
       </div>
-    </div>
-    
   </div>
   
-  <!-- Merge Chef Modal -->
-  <div id="MergeChefModal" class="modal">
-    
-    <!-- Modal content -->
-    <div class="modal-content">
-      <span class="close">&times;</span>
-      <video class="center" id="MergeChefVideo" width="560" height="240" controls >
-        <source src="videos\MergeChef.mp4" type="video/mp4">
-      </video>
-      <div class="download-address"><a href="https://drive.google.com/file/d/1UtiRI2VJwoZefBfhGLqvixWoQosKAFbf/view?usp=drive_link"><h3>Download</h3></a></div>
-      <div class="modal-description">
-        <p class="emphasized" style="color: black; font-size: 23px;">
-        <h2>Description:</h2>
+  <div id="shell" class="body-div" style="background-color:rgb(47, 47, 122);">
+  
+<!-- ---------------------------------------------------Game Projects------------------------------------- -->  
+  
+        <div style="font-size:26px" id="games">
+            <h2 style="text-align: left;color: rgb(255, 255, 255); padding-left: 5%;padding-top: 2%;"> GAME PROJECTS </h2>
+        </div>
+        <hr> 
 
-          The concept is to merge bunch of ingredient to create a dish, but the twist is you can merge anything, so be ready for a surprise. 
-          <br>
-          <br>
-        <b>Role:</b>
-        <br>
+        <div class="cards">
+          <div id="BtnNine" class="card">
+            <img class="projectImages" src="images/Game Icons/MainImage.jpg" alt="Avatar"/>
+            <br>
+            <div style="text-align: center;font-weight:600;font-size: 20px;color: azure;">THE TRIALS</div>
+            <div class="button-text">View</div>
+          </div>
+          <div id="BtnTen" class="card">
+            <img class="projectImages" src="images/Game Icons/VRSpacecraft.jpg" alt="Avatar" />
+            <br>
+            <div style="text-align: center; font-weight:600;font-size: 20px;color: azure;">VR SPACECRAFT</div>
+            <div class="button-text">View</div>
+          </div>
+          <div id="BtnTwo" class="card">
+            <img class="projectImages" src="images/Game Icons/Merge Chef_2.jpg" alt="Avatar" />
+            <br>
+            <div style="text-align: center; font-weight:600;font-size: 20px;color: azure;">MERGE CHEF</div>
+            <div class="button-text">View</div>
+          </div>
+          <div id="myBtn" class="card">
+            <img class="projectImages" src="images/Game Icons/Wordoodle.png" alt="Avatar"/>
+            <br>
+            <div style="text-align: center;font-weight:600;font-size: 20px;color: azure;">WORDOODLE</div>
+            <div class="button-text">View</div>
+          </div>
+          <div id="BtnThree" class="card">
+            <img class="projectImages" src="images/Game Icons/Date Up Runner_2.jpg" alt="Avatar" />
+            <br>
+            <div style="text-align: center; font-weight:600;font-size: 20px;color: azure;">DATE UP RUNNER</div>
+            <div id="myBtn" class="button-text">View</div>
+          </div>
+          <div id="BtnFour" class="card">
+            <img class="projectImages" src="images/Game Icons/BridBrain.png" alt="Avatar" />
+            <br>
+            <div style="text-align: center; font-weight:600;font-size: 20px;color: azure;">BIRD BRAIN</div>
+            <div id="myBtn" class="button-text">View</div>
+          </div>
+          <div id="BtnFive" class="card">
+            <img class="projectImages" src="images/Game Icons/Idle Cow.png" alt="Avatar" />
+            <br>
+            <div style="text-align: center; font-weight:600;font-size: 20px;color: azure;">IDLE COW</div>
+            <div id="myBtn" class="button-text">View</div>
+          </div>
+          <div id="BtnSix" class="card">
+            <img class="projectImages" src="images/Game Icons/Princess Party Dozer.png" alt="Avatar" />
+            <br>
+            <div style="text-align: center; font-weight:600;font-size: 20px;color: azure;">PRINCESS PARTY DOZER</div>
+            <div id="myBtn" class="button-text">View</div>
+          </div>
+          <div id="BtnSeven" class="card">
+            <img class="projectImages" src="images/Game Icons/Reception.png" alt="Avatar" />
+            <br>
+            <div style="text-align: center; font-weight:600;font-size: 20px;color: azure;">Front Desk Fiasco</div>
+            <div id="myBtn" class="button-text">View</div>
+          </div>
+          <div id="BtnEight" class="card">
+            <img class="projectImages" src="images/Game Icons/Hit Em.png" alt="Avatar" />
+            <br>
+            <div style="text-align: center; font-weight:600;font-size: 20px;color: azure;">Hit Em</div>
+            <div id="myBtn" class="button-text">View</div>
+          </div>
+        </div>
 
-          I was incharge of developing the game from the ground up and creating the design, levels and unlockable characters. 
-        </p>
+
+
+    <!-- ----------------------------------------------------- Art Work --------------------------------------------------- -->
+
+      <hr> 
+      <div style="font-size:26px" id="artwork"><h2 style="text-align: left;color: rgb(255, 255, 255); padding-left: 5%;padding-top: 2%;"> ART WORK</h2>
+          <div class="art-grid"  style="display: grid; row-gap: 10px;">
+            <img class="projectImages" src="images/Art Images/The Trials.png" alt="Avatar" onclick="enlargeImage(this)"/>
+            <img class="projectImages" src="images/Art Images/Chess.jpg" alt="Avatar" onclick="enlargeImage(this)"/>
+            <img class="projectImages" src="images/Art Images/Rabbit.jpg" alt="Avatar" onclick="enlargeImage(this)"/>
+            <img class="projectImages" src="images/Art Images/DeliveryBoy.png" alt="Avatar" onclick="enlargeImage(this)"/>
+            <img class="projectImages" src="images/Art Images/Moinjo Daro.png" alt="Avatar" onclick="enlargeImage(this)"/>
+            <img class="projectImages " src="images/Art Images/Bowling Ball and Pins.png" alt="Avatar" onclick="enlargeImage(this)"/>
+            <img class="projectImages hidden" src="images/Art Images/Devil Suit.png" alt="Avatar" onclick="enlargeImage(this)"/>
+            <img class="projectImages hidden" src="images/Art Images/Female Character.png" alt="Avatar" onclick="enlargeImage(this)"/>
+            <img class="projectImages hidden" src="images/Art Images/NPC Character.png" alt="Avatar" onclick="enlargeImage(this)"/>
+            <img class="projectImages hidden" src="images/Art Images/Sword in stone.png" alt="Avatar" onclick="enlargeImage(this)"/>
+            <img class="projectImages hidden" src="images/Art Images/LowPoly Barrel.png" alt="Avatar" onclick="enlargeImage(this)"/>
+            <img class="projectImages hidden" src="images/Art Images/Character .png" alt="Avatar" onclick="enlargeImage(this)"/>
+          </div>
+          <button class="show-more-btn" onclick="showArtworkModal()">Show More</button>
+      </div>
+      <hr>
+
+    <!-- Artwork Modal -->
+    <div id="artworkModal" class="artwork-modal">
+      <span class="close-artwork-modal" onclick="closeArtworkModal()">&times;</span>
+      <div class="artwork-modal-content">
+        <!-- Dynamically populated images will go here -->
+        
       </div>
     </div>
 
-  </div>
+    <!-- Enlarged Image Container -->
+    <div class="enlarged-image-container">
+      <span class="close-enlarged" onclick="closeEnlargedImage()">&times;</span>
+      <img src="" alt="Enlarged Artwork" />
+    </div>
 
-    <!-- DateUpRunner Modal -->
-  <div id="DateUpRunnerModal" class="modal">
+        <!-- ----------------------------------------------The Modal Of games to new window------------------------------------------- -->
+      <div id="myModal" class="modal">
 
-    <!-- Modal content -->
-    <div class="modal-content">
-      <span class="close">&times;</span>
-      <video class="center" id="DateUpVideo" width="560" height="240" controls >
-        <source src="videos\DateUpRunner.mp4" type="video/mp4">
-      </video>
-      <div class="download-address"><a href="https://drive.google.com/file/d/1oSBwWtdD6gc3_qaIdWJ0PF51brj6r0gK/view?usp=drive_link"><h3>Download</h3></a></div>
-      <div class="modal-description">
-        <p class="emphasized" style="color: black; font-size: 23px;">
-        <h2>Description:</h2>
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="close" data-dismiss="modal">&times;</span>
+          <video class="center" id="myVideo" width="560" height="240" controls>
+            <source src="videos\Wordoodle.mp4" type="video/mp4">
+          </video>
+          <div class="download-address"><a href="https://play.google.com/store/apps/details?id=com.word.riddle&hl=en&gl=US"><h3>Download</h3></a></div>
+          <div class="modal-description">
+            <p class="emphasized" style="color: black; font-size: 23px;">
+            <h2>Description:</h2>
 
-          The is game is based on a comedy routine where the player has to pickup power ups to find their love interest.
-          <br>
-          <br>
-        <b>Role:</b>
-        <br>
+              A puzzle game where you test vocabulary by guessing the word using both the number of empty spaces and words provided.
+              The game is meant to be learning experience for people and to give a challenge to anyone who feels they have a good
+              vocabulary.
+              <br>
+              <br>
+            <b>Role:</b>
+            <br>
 
-          Creating the character controller and the power ups and calculate the rewards based on the achievements and lastly all the animations.
-        </p>
+              I was an associate developer who was responsible for the game. Making it functional while maintaining the flow
+              and implementing power ups and new functionality with proper game design. 
+            </p>
+          </div>
+        </div>
+        
       </div>
-    </div>
+      
+      <!-- Merge Chef Modal -->
+      <div id="MergeChefModal" class="modal">
+        
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <video class="center" id="MergeChefVideo" width="560" height="240" controls >
+            <source src="videos\MergeChef.mp4" type="video/mp4">
+          </video>
+          <div class="download-address"><a href="https://drive.google.com/file/d/1UtiRI2VJwoZefBfhGLqvixWoQosKAFbf/view?usp=drive_link"><h3>Download</h3></a></div>
+          <div class="modal-description">
+            <p class="emphasized" style="color: black; font-size: 23px;">
+            <h2>Description:</h2>
 
-  </div>
+              The concept is to merge bunch of ingredient to create a dish, but the twist is you can merge anything, so be ready for a surprise. 
+              <br>
+              <br>
+            <b>Role:</b>
+            <br>
 
-    <!-- BridBrain Modal -->
-  <div id="BridBrainModal" class="modal">
+              I was incharge of developing the game from the ground up and creating the design, levels and unlockable characters. 
+            </p>
+          </div>
+        </div>
 
-    <!-- Modal content -->
-    <div class="modal-content">
-      <span class="close">&times;</span>
-      <video class="center" id="BBVideo" width="560" height="240" controls >
-        <source src="videos\BB.mp4" type="video/mp4">
-      </video>
-      <div class="download-address"><a href="https://play.google.com/store/apps/details?id=com.RainAracdeGames.BirdBrainWordRun3dPuzzleGame"><h3>Download</h3></a></div>
-      <div class="modal-description">
-        <p class="emphasized" style="color: black; font-size: 23px;">
-        <h2>Description:</h2>
-
-        Bird Brain Word Run is a word puzzle game that features a bird character running on a 3D platform to collect letters
-        and form words. Players must help the bird avoid obstacles and race against the clock to complete each level. With its 
-        fun and addictive gameplay, Bird Brain Word Run is perfect for all ages and will test your vocabulary skills. Join our 
-        feathered friend on an exciting word-building adventure today!
-          <br>
-          <br>
       </div>
-    </div>
 
-  </div>
+        <!-- DateUpRunner Modal -->
+      <div id="DateUpRunnerModal" class="modal">
 
-    <!-- Idle Cow Modal -->
-  <div id="IdleCowModal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <video class="center" id="DateUpVideo" width="560" height="240" controls >
+            <source src="videos\DateUpRunner.mp4" type="video/mp4">
+          </video>
+          <div class="download-address"><a href="https://drive.google.com/file/d/1oSBwWtdD6gc3_qaIdWJ0PF51brj6r0gK/view?usp=drive_link"><h3>Download</h3></a></div>
+          <div class="modal-description">
+            <p class="emphasized" style="color: black; font-size: 23px;">
+            <h2>Description:</h2>
 
-    <!-- Modal content -->
-    <div class="modal-content">
-      <span class="close">&times;</span>
-      <video class="center" id="ICVideo" width="560" height="240" controls >
-        <source src="videos\IC.mp4" type="video/mp4">
-      </video>
-      <div class="download-address"><a href="https://play.google.com/store/apps/details?id=com.mindstormstudios.tinycow&hl=en_US"><h3>Download</h3></a></div>
-      <div class="modal-description">
-        <p class="emphasized" style="color: black; font-size: 23px;">
-        <h2>Description:</h2>
+              The is game is based on a comedy routine where the player has to pickup power ups to find their love interest.
+              <br>
+              <br>
+            <b>Role:</b>
+            <br>
 
-        Idle Cow is the latest from the greatest offline farm game with fast tapping as your main tool! 
-        Offering the best features from the clicker (incremental) games, playing a farm simulator and milking cows to make cheese,
-        Idle Cow offers the most casual idle experiences to date
-          <br>
-          <br>
+              Creating the character controller and the power ups and calculate the rewards based on the achievements and lastly all the animations.
+            </p>
+          </div>
+        </div>
+
       </div>
-    </div>
 
-  </div>
+        <!-- BridBrain Modal -->
+      <div id="BridBrainModal" class="modal">
 
-    <!-- Princess Party Dozer Modal -->
-  <div id="PrincessPartyDozerModal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <video class="center" id="BBVideo" width="560" height="240" controls >
+            <source src="videos\BB.mp4" type="video/mp4">
+          </video>
+          <div class="download-address"><a href="https://play.google.com/store/apps/details?id=com.RainAracdeGames.BirdBrainWordRun3dPuzzleGame"><h3>Download</h3></a></div>
+          <div class="modal-description">
+            <p class="emphasized" style="color: black; font-size: 23px;">
+            <h2>Description:</h2>
 
-    <!-- Modal content -->
-    <div class="modal-content">
-      <span class="close">&times;</span>
-      <video class="center" id="PPDVideo" width="560" height="240" controls >
-        <source src="videos\PPD.mp4" type="video/mp4">
-      </video>
-      <div class="download-address"><a href="https://play.google.com/store/apps/details?id=com.princess.palace.coin.dozer.google&hl=en_US"><h3>Download</h3></a></div>
-      <div class="modal-description">
-        <p class="emphasized" style="color: black; font-size: 23px;">
-        <h2>Description:</h2>
+            Bird Brain Word Run is a word puzzle game that features a bird character running on a 3D platform to collect letters
+            and form words. Players must help the bird avoid obstacles and race against the clock to complete each level. With its 
+            fun and addictive gameplay, Bird Brain Word Run is perfect for all ages and will test your vocabulary skills. Join our 
+            feathered friend on an exciting word-building adventure today!
+              <br>
+              <br>
+          </div>
+        </div>
 
-        Get ready for an addictive gaming experience! Push those coins into the bank to boost your score, or slide them into the gutters to gather some good karma.
-        Win awesome prizes and embark on exciting quests in amazing worlds. Upgrade, and strategically use power-ups to maximize your rewards.
-        And if that's not enough, try your luck at the spin wheel or the jackpot slots.
-          <br>
-          <br>
       </div>
-    </div>
 
-  </div>
+        <!-- Idle Cow Modal -->
+      <div id="IdleCowModal" class="modal">
 
-    <!-- ReceptionGame Modal -->
-  <div id="ReceptionGameModal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <video class="center" id="ICVideo" width="560" height="240" controls >
+            <source src="videos\IC.mp4" type="video/mp4">
+          </video>
+          <div class="download-address"><a href="https://play.google.com/store/apps/details?id=com.mindstormstudios.tinycow&hl=en_US"><h3>Download</h3></a></div>
+          <div class="modal-description">
+            <p class="emphasized" style="color: black; font-size: 23px;">
+            <h2>Description:</h2>
 
-    <!-- Modal content -->
-    <div class="modal-content">
-      <span class="close">&times;</span>
-      <video class="center" id="FDFVideo" width="560" height="240" controls >
-        <source src="videos\FDF.mp4" type="video/mp4">
-      </video>
-      <div class="download-address"><a href="https://pixelpopperdude.itch.io/front-desk-fiasco"><h3>Download</h3></a></div>
-      <div class="modal-description">
-        <p class="emphasized" style="color: black; font-size: 23px;">
-        <h2>Description:</h2>
+            Idle Cow is the latest from the greatest offline farm game with fast tapping as your main tool! 
+            Offering the best features from the clicker (incremental) games, playing a farm simulator and milking cows to make cheese,
+            Idle Cow offers the most casual idle experiences to date
+              <br>
+              <br>
+          </div>
+        </div>
 
-        Embark on a captivating journey into the chaotic world of receptionist duties with "Front Desk Fiasco." 
-        This uniquely crafted game offers an immersive experience where you step into the shoes of a receptionist navigating through a week of challenges.
-          <br>
-          <br>
-        <b>Role:</b>
-        <br>
-
-          I Solo developed this game, hence the design and implemetation of it was my lone effort. The great thing about this game is that I made this game with only
-          Unity's basic primitive shapes only to limit my thinking and thinking inside of the box.
-        </p>
       </div>
-    </div>
 
-  </div>
+        <!-- Princess Party Dozer Modal -->
+      <div id="PrincessPartyDozerModal" class="modal">
 
-    <!-- Hit Em Modal -->
-  <div id="HitEmModal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <video class="center" id="PPDVideo" width="560" height="240" controls >
+            <source src="videos\PPD.mp4" type="video/mp4">
+          </video>
+          <div class="download-address"><a href="https://play.google.com/store/apps/details?id=com.princess.palace.coin.dozer.google&hl=en_US"><h3>Download</h3></a></div>
+          <div class="modal-description">
+            <p class="emphasized" style="color: black; font-size: 23px;">
+            <h2>Description:</h2>
 
-    <!-- Modal content -->
-    <div class="modal-content">
-      <span class="close">&times;</span>
-      <video class="center" id="HitEmVideo" width="560" height="240" controls >
-        <source src="videos\HitEm.mp4" type="video/mp4">
-      </video>
-      <div class="download-address"><h3>Link Unavailable</h3></div>
-      <div class="modal-description">
-        <p class="emphasized" style="color: black; font-size: 23px;">
-        <h2>Description:</h2>
+            Get ready for an addictive gaming experience! Push those coins into the bank to boost your score, or slide them into the gutters to gather some good karma.
+            Win awesome prizes and embark on exciting quests in amazing worlds. Upgrade, and strategically use power-ups to maximize your rewards.
+            And if that's not enough, try your luck at the spin wheel or the jackpot slots.
+              <br>
+              <br>
+          </div>
+        </div>
 
-        The game is about knocking down rusted pipes before they start to destroy other parts of the sewerage system. 
-          <br>
-          <br>
       </div>
-    </div>
 
-  </div>
+        <!-- ReceptionGame Modal -->
+      <div id="ReceptionGameModal" class="modal">
 
-    <!-- Footer -->
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <video class="center" id="FDFVideo" width="560" height="240" controls >
+            <source src="videos\FDF.mp4" type="video/mp4">
+          </video>
+          <div class="download-address"><a href="https://pixelpopperdude.itch.io/front-desk-fiasco"><h3>Download</h3></a></div>
+          <div class="modal-description">
+            <p class="emphasized" style="color: black; font-size: 23px;">
+            <h2>Description:</h2>
 
-    <div style="font-size:26px; text-align: left;color: rgb(0, 0, 0); padding-left: 5%;">
-      <h2 >Contact:</h2>
-      <ul class="icons">
-        <li class="fa fa-twitter-square"> <a href="https://twitter.com/M_MasoodArain"><span class="label">Twitter</span></a></li>
-        <li class="fa fa-github"> <a href="https://github.com/miido-dev"><span class="label">Github</span></a></li>
-        <li class="fa fa-linkedin"> <a href="https://www.linkedin.com/in/muhammad-masood-arain-20b90b171/"><span class="label">Linkedin</span></a></li>
-        <li class="fa fa-envelope"> <a href="mailto: muhammadmasood1245@gmail.com"><span class="label">Email</span></a></li>
-      </ul>
-    </div>
+            Embark on a captivating journey into the chaotic world of receptionist duties with "Front Desk Fiasco." 
+            This uniquely crafted game offers an immersive experience where you step into the shoes of a receptionist navigating through a week of challenges.
+              <br>
+              <br>
+            <b>Role:</b>
+            <br>
+
+              I Solo developed this game, hence the design and implemetation of it was my lone effort. The great thing about this game is that I made this game with only
+              Unity's basic primitive shapes only to limit my thinking and thinking inside of the box.
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+        <!-- Hit Em Modal -->
+      <div id="HitEmModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <video class="center" id="HitEmVideo" width="560" height="240" controls >
+            <source src="videos\HitEm.mp4" type="video/mp4">
+          </video>
+          <div class="download-address"><h3>Link Unavailable</h3></div>
+          <div class="modal-description">
+            <p class="emphasized" style="color: black; font-size: 23px;">
+            <h2>Description:</h2>
+
+            The game is about knocking down rusted pipes before they start to destroy other parts of the sewerage system. 
+              <br>
+              <br>
+          </div>
+        </div>
+
+      </div>
+
+        <!-- THE TRIALS -->
+      <div id="TheTrialsModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <video class="center" id="TheTrialVideo" width="560" height="240" controls >
+            <source src="videos\The Trials.mp4" type="video/mp4">
+          </video>
+          <div class="download-address"><h3>Link Unavailable</h3></div>
+          <div class="modal-description">
+            <p class="emphasized" style="color: black; font-size: 23px;">
+            <h2>Description:</h2>
+              Game is about a person who after dying ends up in limbo and there he meets the devil
+              and makes a deal with him that he is going to pass all his 7 Trials in exchange if he succeed
+              he can go to heaven else he will drag him to hell.
+              <br>
+              <br>
+          </div>
+        </div>
+
+      </div>
+
+        <!-- THE TRIALS -->
+      <div id="VRSpacecraftModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <video class="center" id="VRSpacecraftModalVideo" width="560" height="240" controls >
+            <source src="videos\VR Space.mp4" type="video/mp4">
+          </video>
+          <div class="download-address"><h3>Link Unavailable</h3></div>
+          <div class="modal-description">
+            <p class="emphasized" style="color: black; font-size: 23px;">
+            <h2>Description:</h2>
+              This is a VR based game where the player is stranded on a ship which was initially schedule for
+              repair and the AI has gone rouge so player has to perform certain steps in order to escape the ship.
+              <br>
+              <br>
+          </div>
+        </div>
+
+      </div>
+
+        <!-- ---------------------------------------------Footer-------------------------------------------------- -->
+
+        <div id="contact" style="font-size:26px; text-align: left;color: rgb(0, 0, 0); padding-left: 5%;">
+          <h2  style="color: rgb(255, 255, 255);">CONTACT:</h2>
+          <ul class="icons">
+            <li class="fa fa-twitter-square"> <a href="https://twitter.com/M_MasoodArain"><span class="label">Twitter</span></a></li>
+            <li class="fa fa-github"> <a href="https://github.com/miido-dev"><span class="label">Github</span></a></li>
+            <li class="fa fa-linkedin"> <a href="https://www.linkedin.com/in/muhammad-masood-arain-20b90b171/"><span class="label">Linkedin</span></a></li>
+            <li class="fa fa-envelope"> <a href="mailto: muhammadmasood1245@gmail.com"><span class="label">Email</span></a></li>
+          </ul>
+        </div>
     
 
   </div>
